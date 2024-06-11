@@ -24,3 +24,24 @@ print(active_users)
 #FUNCION range(), REALIZA SECUENCIAS NUMERICAS
 for i in range(5):
   print(i)
+
+print(list(range(5,10)))
+
+print(list(range(0, 10, 3)))
+
+#ITERAR EN LOS INDECES DE UNA SECUENCIA
+secuencia=['Mary', 'had', 'a', 'little', 'lamb']
+for i in range(len(secuencia)):
+  print(i, secuencia[i])
+
+print(sum(range(4)))
+
+#SENTENCIAS break, continue & else EN BUCLES
+for n in range(2, 10):
+  for x in range(2, n):
+    if n % x == 0:
+      print(n, 'equals', x, '*', n//x)
+      break
+  else:
+    #si el bucle no encuentra nada
+    print(n, 'is a prime number')
