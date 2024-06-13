@@ -45,3 +45,10 @@ for n in range(2, 10):
   else:
     #si el bucle no encuentra nada
     print(n, 'is a prime number')
+
+#SENTENCIA continue CONTINUA CON LA SIGUIENTE ITERACION DEL CICLO
+for num in range(2, 10):
+  if num % 2 == 0:
+    print("Found an even number", num)
+    continue
+  print("found an odd number", num)
