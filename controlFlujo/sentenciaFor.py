@@ -52,3 +52,10 @@ for num in range(2, 10):
     print("Found an even number", num)
     continue
   print("found an odd number", num)
+
+#SENTENCIA pass NO HACE NADA Se puede usar cuando una sentencia es requerida por la sintaxis pero el programa no requiere ninguna acción
+while True:
+  pass
+
+class MyEmptyClass:
+  pass
