@@ -30,7 +30,7 @@
       - **else**: Un bucle for o while puede incluir una cláusula else. En un bucle for, la cláusula else se ejecuta después de que el bucle alcance su iteración final. En un bucle while, se ejecuta después de que la condición del bucle se vuelva falsa. En cualquier tipo de bucle, la cláusula else no se ejecuta si el bucle ha finalizado con break.
       - **continue**:La declaración continue, también tomada de C, continua con la siguiente iteración del ciclo.
 
-3. >**Pass**
+3. > **Pass**
     - La sentencia pass no hace nada. Se puede usar cuando una sentencia es requerida por la sintaxis pero el programa no requiere ninguna acción.
 
     ```python
@@ -39,4 +39,20 @@
 
     class MyEmptyClass:
       pass
+    ```
+4. > **match**
+    - Una sentencia match recibe una expresión y compara su valor con patrones sucesivos dados en uno o más bloques case.
+    ```python
+    def http_error(status):
+      match status:
+        case 400:
+          return "Bad request"
+        case 404:
+          return "Not found"
+        case 418:
+          return "Im a teapot"
+        case 401 | 403:
+          return "Not allowed"
+        case _:
+          return "Something wrong with the internet"
     ```
